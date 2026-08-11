@@ -24,6 +24,72 @@
             }
 
             .player-wrapper { position: relative; display:inline-block; margin-top: 15px;}
+            .player-card {
+                background: white;
+                border: 2px solid #bfdbfe;
+                padding: 20px 30px;
+                text-align: center;
+                font-size: 15px;
+                border-radius: 10px;
+            }
+            .winner-badge {
+                position: absolute;
+                top: -12px; right: -12px;
+                background: #f59e0b;
+                color: white;
+                padding: 5px 10px;
+                font-size: 12px;
+                font-weight: bold;
+                border-radius: 20px;
+            }
+
+            .league-label {
+                position: sticky;
+                top: 52px;
+                background: #1d4ed8;
+                color: white;
+                padding: 10px 20px;
+                font-weight: bold;
+                margin: 20px 0 10px;
+            }
+
+            .player-item {
+                background: white;
+                border: 2px solid #bfdbfe;
+                padding: 10px 20px;
+                margin: 8px 0;
+                width: 220px;
+                border-radius: 8px;
+            }
         </style>
     </head>
+    <body>
+        <div class="score-bar">&#127942; sportzone live Score:team A 3 - 2 team B fixed </div>
+            
+        <h1>&#127942; sportzone Tournament</h1>
+
+        <h2>Absolute Positioning</h2>
+        <p>The gold badge is pinned to the player card using <strong>position: absolute</strong>.the card has <strong>position: relative</strong>.</p>
+        <div class="player-wrapper">
+            <div class="player-card">&#9917; Alex Johnson<br>striker - 12 Goals</div>
+                <div class="winner-badge">&#127942; MVP</div>
+                </div>
+
+                <h2>Fixed Positioning</h2>
+                <P>The blue scoreboard at the top uses <strong>position: fixed</strong>.Scroll down - it always stays visible!</P>
+
+                <h2>sticky Positioning</h2>
+                <p>The league label scrolls with a page, then sticks to the top as you scrolls past it.</p>
+                <div class="league-label">Premier league players - STICKY</div>
+                <div class="player-item">&#9917; Alex Johnson - 12 Goals</div>
+                <div class="player-item">&#9917; Sam Rivera - 10 Goals</div>
+                <div class="player-item">&#9917; Jordan Lee - 9 Goals</div>
+                <div class="player-item">&#9917; Casey Kim - 8 Goals</div>
+                <div class="player-item">&#9917; Morgan Chen - 7 Goals</div>
+                <div class="player-item">&#9917; Rilay park - 6 Goals</div>
+
+                <h2>top,right.bottom,left</h2>
+                <p>These cantrol exactly where a positioned element is placed. Try changing the values on <strong>.winner-badge</strong> above!</p>
+                <p>top - down from top right - left from right bottom - up from bottom left - right from left</p>
+    </body>
 </html>
