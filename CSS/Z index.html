@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(68, 235, 171);
+        }
+
+        div {
+            position: relative;
+            width: 100px;
+            padding: 50px;
+            background-color: rgb(146, 178, 248);
+            color: rgb(0, 0, 0);
+            border: 5px rgb(3, 39, 94) solid;
+            border-radius: 20px;
+        }
+
+        .div1 {
+            z-index: 1;
+            font-size: large;
+            font-style: oblique;
+            background-color: rgb(243, 20, 4);
+        }
+
+        .div2 {
+            z-index: 2;
+            top: -25px;
+            left: 75px;
+            font-size: large;
+            font-style: oblique;
+            background-color: rgb(247, 133, 3);
+        }
+
+        .div3{
+            z-index: 3;
+            top: -50px;
+            font-size: large;
+            font-style: oblique;
+            background-color: rgb(251, 255, 9);
+        }
+
+        .div4 {
+            z-index: 4;
+            top: -75px;
+            left: 50px;
+            font-size: large;
+            font-style: oblique;
+            background-color: rgb(7, 252, 7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">z-index 1</div>
+    <div class="div2">z-index 2</div>
+    <div class="div3">z-index 3</div>
+    <div class="div4">z-index 4</div> 
+</body>
+</html>
