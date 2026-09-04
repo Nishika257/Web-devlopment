@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Study Progress Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <style>
+        body {
+            background-color: #f4fff4;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .jumotron {
+            background-color: #e6f9ec;
+            border-radius: 6px solid #ff5a43;
+        }
+
+        .jumotron h1 {
+            color: #ff5a43;
+        }
+
+        .section-title {
+            color: #ff5a43;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumotron jumotron-fuild">
+        <div class="container">
+            <h1>My Study Progress Dashboard</h1>
+            <p class="lead">
+                Welcome To my Study Dashboard Here i will tell you how is my study is going on.
+            </p>
+
+            <button class="btn btn-primary">English</button>
+            <button class="btn btn-success">Math</button>
+            <button class="btn btn-warning">Science</button>
+            <button class="btn btn-danger">Hindi</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">
+            Experiments Completed <span class="batch batch-danger">4</span>
+        </h2>
+
+        <p>English<span class="badge badge-success">7 experiments</span></p>
+        <p>Math<span class="badge badge-primary">5 experiments</span></p>
+        <p>Science<span class="badge badge-warning">3 experiments</span></p>
+        <p>Hindi<span class="badge badge-info">4 experiments</span></p>
+
+        <h2 class="section-title">Research Progress</h2>
+        <p>English</p>
+        <div class="progress mb-3">
+            <div class="Progress bg bg-primary" style="width: 67%;">67%"</div>
+        </div>
+
+        <p>Math</p>
+        <div class="progress mb-3">
+            <div class="Progress bg bg-success" style="width: 79%;">79%"</div>
+        </div>
+
+        <p>Science</p>
+        <div class="progress mb-3">
+            <div class="Progress bg bg-warning" style="width: 24%;">24%"</div>
+        </div>
+
+        <p>Hindi</p>
+        <div class="progress mb-3">
+            <div class="Progress bg bg-danger" style="width: 40%;">40%"</div>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+</body>
+
+</html>
