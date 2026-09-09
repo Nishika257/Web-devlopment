@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Animal Safari</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, intial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+        <style>
+            body {
+                position: relative;
+            }
+
+            .safari-slide {
+                height: 200px;
+                text-align: center;
+                padding-top: 75 px;
+                font-size: 1.8rem;
+                color: bisque;
+            }
+
+            .slide-forest {
+                background: rgb(27, 134, 0);
+            }
+
+            .slide-ocean {
+                background: rgb(1, 98, 177);
+            }
+
+            .slide-desert {
+                background: rgb(175, 135, 60);
+            }
+
+            .section {
+                padding: 70px 20px;
+                min-height: 300px;
+            }
+
+            #forest {
+                background: rgb(169, 255, 134);
+            }
+
+            #ocean {
+                background: rgb(53, 117, 170);
+            }
+
+            #desert {
+                background: rgb(138, 121, 46);
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target="#safarinav" data-offset="60">
+        <div id="safariCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#safariCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#safariCarousel" data-slide-to="1"></li>
+                <li data-target="#safariCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active safari-slide slide-forest">
+                    🌿 Forest Safari
+                </div>
+                    <div class="carousel-item active safari-slide slide-forest">
+                        🌊 Ocean Safari
+                    </div>
+                        <div class="carousel-item active safari-slide slide-forest">
+                            🏜️ Desert Safari
+                      </div>
+                 </div>
+                 <a class="carousel-control-prev" href="#safariCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                 </a>
+                <a class="carousel-control-next" href="#safariCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
