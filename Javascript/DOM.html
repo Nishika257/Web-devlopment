@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <style>
+            .alert {
+                color: rgb(0, 183, 255);
+                 background: rgb(1, 51, 126);
+                 padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">Welcome</h1>
+        <p> Hello</p>
+        <p>How are you?</p>
+
+        <script>
+            let div = document.createElement('div');
+            div.id = "paragaph";
+            div.className = "alert";
+            div.innerHTML = "<p>Congrats! You have created a div. </p>";
+            document.body.append(div);
+
+            let heading = document.getElementById("heading");
+            heading.innerHTML = "😃";
+
+            document.querySelector('#heading + p').innerHTML = "<strong>Good Job!</strong>";
+        </script>
+    </body>
+</html>
