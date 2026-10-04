@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change the color of the text using CSS properties</title>
+        <style>
+            h2 {
+                text-align: center;
+            }
+
+            .text {
+                margin: auto;
+            }
+
+            .buttons {
+                padding: 20px;
+                width: 200px;
+                margin: auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>make changes to text</h2>
+
+        <div class="text">My Name is Nishika</div>
+
+        <div class="buttons">
+            <button onclick="changeColorToBlue()">change color to blue</button>
+            <button onclick="changeColorToGreen()">Change color to green</button>
+            <button onclick="changeColorToRed()">Change color to red</button>
+            <button onclick="hidetext()">Hide</button>
+            <button onclick="showtext()">Show</button>
+        </div>
+
+        <script>
+            let div = document.querySelector(".text");
+
+            function changeColorToBlue() {
+                div.style.color = "blue";
+            }
+
+            function changeColorToGreen() {
+                div.style.color = "green";
+            }
+
+            function changeColorToRed() {
+                div.style.color = "red";
+            }
+
+            function hidetext() {
+                div.style.display = "none";
+            }
+
+            function showtext() {
+                div.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
