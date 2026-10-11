@@ -37,5 +37,77 @@
                 <p class="lead">I love learning,building,and creating fun projects!</p>
             </div>
           </header>
+
+          <!-- About -->
+           <section class="py-5 text-center" style="background-color: rgb(226, 255, 255);" id="about">
+            <div class="container">
+                <h2 class="fw-bold">About Me</h2>
+                <p class="lead">I'm a student who love to play games, coding and crafting!</p>
+            </div>
+           </section>
+
+           <!-- Skills -->
+            <section class="py-5" style="background-color: rgb(0, 150, 155);" id="skill">
+                <div class="container text-center">
+                    <h2 class="fw-bold mb-4">My Skills</h2>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm p-3">
+                                <h5>Coding</h5>
+                                <p>I built websites and games</p></div></div>
+                        
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm p-3">
+                                <h5>Crafting</h5>
+                                <p>I craft so many thing</p></div></div>
+
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm p-3">
+                                <h5>Playing</h5>
+                                <p>I run very fast when i am playing</p></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+             <section class="py-5" style="background-color: aliceblue;" id="projects">
+                <div class="container text-center">
+                    <h2 class="fw-bold mb-4">My Projects</h2>
+                    <div class="row g-3 ">
+                        <div class="col-md=4">
+                            <button class="btn btn-outline-primary w-100 py-3" data-proj="mini game">
+                                Mini Game</button></div>
+
+                        <div class="col-md=4">
+                            <button class="btn btn-outline-primary w-100 py-3" data-proj="Math Quiz">
+                                Math Quiz</button></div>
+
+                                <div class="col-md=4">
+                                    <button class="btn btn-outline-primary w-100 py-3" data-proj="Drawing Gallery">
+                                        Drawing Gallery</button></div>
+                    </div>
+                    <div class="alert alert-info mt-4 d-none" id="projectAlert"></div>
+                </div>
+             </section>
+
+             <!-- Contact Form with Formspree -->
+              <section class="py-5" style="background-color: blanchedalmond;" id="contact">
+                <div class="container">
+                    <h2 class="fw-bold text-center mb-4">Contact Me</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <form id="contactForm" action="YOUR_FORM_URL "method="POST">
+                                <input class="form-control mb-3" name="name" placeholder="Your name" required>
+                                
+                                <input class="form-control mb-3" name="email" type="email" placeholder="Your email" required>
+
+                                <textarea class="form-control mb-3"name="massage" rows="3" placeholder="Your massasge" required></textarea>
+
+                                <button class="btn btn-success w-100 fw-bold" type="submit">Send massage </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </section>
     </body>
 </html>
