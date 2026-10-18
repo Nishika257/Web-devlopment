@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!--Slide Show-->
+        <center>
+            <section>
+                <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xsEvYO8KMuv-lLMzuuND2RGfv_Zb5-5Lftyh13vpdw&s=10" style="height: 500px;width: 800px;">
+
+                <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8ZCAWyOL1fpVaIC0DZqzEglE7OPv-zWSE7EhDywT8w&s=10" style="height: 500px;width: 800px;">
+
+                <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVA9fcK255zJ925Adw-91jTyUHRpEkt8olufnS7wgzYg&s=10"style="height: 500px;width: 800px;">
+
+                <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAFUxj9kepQYzlCKkknLkMY6bnZUAbvvITD-3mufWvQ&s=10" style="height: 500px;width: 800px;">
+            </section>
+        </center>
+
+        <script>
+            // Automatic Slideshow - change image every 3 seconds
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for(i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; //making invisible
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex-1].style.display = "block"; //making visible
+                setTimeout(carousel, 3000);
+            }
+        </script>
+    </body>
+</html>
