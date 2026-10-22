@@ -28,3 +28,34 @@ section {
     display: flex;
     align-items: center;
 }
+
+/* Keep text centered only where you already used text-center */
+section .container {
+    width: 100%;
+}
+
+.hero .container,
+section .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Taller + center-aligned SKILL and PROJECTS */
+#skill .card,
+#projects .card,
+#projects button {
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center; /* horizontal center */
+    text-align: center;
+}
+
+/* keep CONTACT and normal */
+#contact .card {
+    min-height: auto;
+}
